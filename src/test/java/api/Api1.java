@@ -13,6 +13,7 @@ public class Api1 {
     @Test
     public void getRequest1(){
         String url = "https://automationexercise.com/api/productsList";
+         System.out.println("Merhaba");
         Response response =given().when().get(url);
         response.prettyPrint();
         System.out.println("content Type: "+response.contentType());
