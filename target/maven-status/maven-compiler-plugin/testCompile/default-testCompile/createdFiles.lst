@@ -1,0 +1,13 @@
+stepdefinitions\AutomationExerciseTC01StepDefinitions2.class
+stepdefinitions\Hooks.class
+utilities\ReusableMethods$2.class
+runners\Runner.class
+utilities\ReusableMethods$1.class
+stepdefinitions\AutomationExerciseTC01StepDefinitions.class
+utilities\Driver.class
+stepdefinitions\HerokuappStepDefinitions.class
+pages\HeroquappPages.class
+utilities\ConfigReader.class
+pages\AutomationExcercisePages.class
+runners\Runner1.class
+utilities\ReusableMethods.class

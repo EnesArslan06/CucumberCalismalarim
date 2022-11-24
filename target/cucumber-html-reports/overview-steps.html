@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+        <td>1</td>
+      <td>21 Nov 2022, 22:04</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.clickContinueButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="2688874900">2.688</td>
+              <td class="duration" data-value="2688874900">2.688</td>
+              <td class="duration" data-value="2688874900">2.688</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.clickDeleteAccountButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="3049662400">3.049</td>
+              <td class="duration" data-value="3049662400">3.049</td>
+              <td class="duration" data-value="3049662400">3.049</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.click_button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3413302500">3.413</td>
+              <td class="duration" data-value="3413302500">3.413</td>
+              <td class="duration" data-value="3413302500">3.413</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.click_on_button(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3238528100">3.238</td>
+              <td class="duration" data-value="3238528100">3.238</td>
+              <td class="duration" data-value="3238528100">3.238</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.enter_name_and_email_address()</td>
+              <td>1</td>
+              <td class="duration" data-value="2257100000">2.257</td>
+              <td class="duration" data-value="2257100000">2.257</td>
+              <td class="duration" data-value="2257100000">2.257</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.fill_details_first_name_last_name_company_address_address2_country_state_city_zipcode_mobile_number()</td>
+              <td>1</td>
+              <td class="duration" data-value="7035269000">7.035</td>
+              <td class="duration" data-value="7035269000">7.035</td>
+              <td class="duration" data-value="7035269000">7.035</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.fill_details_title_name_email_password_date_of_birth()</td>
+              <td>1</td>
+              <td class="duration" data-value="10573915600">10.573</td>
+              <td class="duration" data-value="10573915600">10.573</td>
+              <td class="duration" data-value="10573915600">10.573</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.kullaniciSayfayiKapatir()</td>
+              <td>1</td>
+              <td class="duration" data-value="730839900">0.730</td>
+              <td class="duration" data-value="730839900">0.730</td>
+              <td class="duration" data-value="730839900">0.730</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.kullanici_adresine_gider(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="15848647900">15.848</td>
+              <td class="duration" data-value="15848647900">15.848</td>
+              <td class="duration" data-value="15848647900">15.848</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.select_checkbox(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="4157992500">4.157</td>
+              <td class="duration" data-value="4157992500">4.194</td>
+              <td class="duration" data-value="8315985000">8.315</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.verifyThatACCOUNTCREATEDIsVisible()</td>
+              <td>1</td>
+              <td class="duration" data-value="2041812100">2.041</td>
+              <td class="duration" data-value="2041812100">2.041</td>
+              <td class="duration" data-value="2041812100">2.041</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.verifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="3803769000">3.803</td>
+              <td class="duration" data-value="3803769000">3.803</td>
+              <td class="duration" data-value="3803769000">3.803</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.verifyThatLoggedInAsUsernameIsVisible()</td>
+              <td>1</td>
+              <td class="duration" data-value="3775214000">3.775</td>
+              <td class="duration" data-value="3775214000">3.775</td>
+              <td class="duration" data-value="3775214000">3.775</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.verify_is_visible(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2059052500">2.059</td>
+              <td class="duration" data-value="2059052500">2.059</td>
+              <td class="duration" data-value="2059052500">2.059</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.verify_that_home_page_is_visible_successfully()</td>
+              <td>1</td>
+              <td class="duration" data-value="2069890500">2.069</td>
+              <td class="duration" data-value="2069890500">2.069</td>
+              <td class="duration" data-value="2069890500">2.069</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.AutomationExerciseTC01StepDefinitions.verify_that_is_visible(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="47833100">0.047</td>
+              <td class="duration" data-value="47833100">0.047</td>
+              <td class="duration" data-value="47833100">0.047</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.setUp()</td>
+              <td>1</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="duration" data-value="0">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="2205043900">2.205</td>
+              <td class="duration" data-value="2205043900">2.205</td>
+              <td class="duration" data-value="2205043900">2.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td class="duration">3.850</td>
+            <td class="duration">15.848</td>
+            <td class="duration">1:13.154</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

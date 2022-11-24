@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="73.381">
+    <testcase classname="AutomationExercise" name="TestCase1" time="73.177">
+        <system-out>
+            <![CDATA[Given Kullanici "AutomationExercise" adresine gider.........................passed
+Then Verify that home page is visible successfully..........................passed
+Then Click on 'Signup / Login' button.......................................passed
+And Verify 'New User Signup!' is visible....................................passed
+And Enter name and email address............................................passed
+And Click 'Signup' button...................................................passed
+And Verify that 'ENTER ACCOUNT INFORMATION' is visible......................passed
+And Fill details: Title, Name, Email, Password, Date of birth...............passed
+And Select checkbox 'Sign up for our newsletter!'...........................passed
+And Select checkbox 'Receive special offers from our partners!'.............passed
+And Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number.passed
+And Verify that ACCOUNT CREATED! is visible.................................passed
+And Click Continue button...................................................passed
+And Verify that Logged in as username is visible............................passed
+And Click Delete Account button.............................................passed
+And Verify that ACCOUNT DELETED! is visible and click Continue button.......passed
+And Kullanici sayfayi kapatir...............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
